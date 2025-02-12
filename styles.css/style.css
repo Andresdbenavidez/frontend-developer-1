@@ -388,6 +388,61 @@ body {
     font-weight: bold;
 }
 
+
+
+
+.myhisorder{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.myhisorder__title{
+    font-size: var(--lg);
+    margin-bottom: 40px;
+}
+
+.myhisorder__container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.myhisorder__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hisorder{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.hisorder p:nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hisorder p span:nth-child(1){
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.hisorder p:nth-child(2){
+    text-align: end;
+    font-weight: bold;
+}
+
+.hisorder p span:nth-child(2){
+    font-size: var(--sm);
+    color: var(--background-paint);
+}
+
 @media screen and (max-width: 640px) {
     .form{
         height: 100%;
