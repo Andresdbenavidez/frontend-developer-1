@@ -519,7 +519,7 @@ nav{
     justify-content: center;
 }
 
-.product__detail{
+.product__detail, .buycar__detail{
     width: 360px;
     padding-bottom: 24px;
     position: absolute;
