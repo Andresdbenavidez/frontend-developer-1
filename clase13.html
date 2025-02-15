@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <aside class="finbuy">
+        <div class="finbuy__titlecont">
+            <img src="./icons/flechita.svg" alt="arrow">
+            <h1 class="title finbuy__title">My order</h1>
+        </div>
+
         <div class="finbuy__content">
 
             <div class="finbuy__shopcart">
@@ -42,26 +49,19 @@
                 <p>$30.00</p>
                 <img src="icons/icon_close.png" alt="close">
             </div>
-
-            <div class="finbuy__shopcart">
-                <figure>
-                    <img src="https://images.pexels.com/photos/5464921/pexels-photo-5464921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="" class="finbuy__shopcart--image">
-                </figure>
-                <p>Bike</p>
-                <p>$30.00</p>
-                <img src="icons/icon_close.png" alt="close">
-            </div>
-
+            
             <div class="finbuy__order">
                 <p>
                     <span>Total</span>
                 </p>
                 <p>$560.00</p>
-                <img src="icons/icon_close.png" alt="close">
             </div>
-    </div>
-</div>               
+
+            <button class="button">
+                Checkout
+            </button>            
+    
+        </div>
     </aside>
 </body>
 </html>
