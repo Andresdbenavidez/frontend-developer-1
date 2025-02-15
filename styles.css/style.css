@@ -305,7 +305,8 @@ body {
     bottom: 0;
 }
 
-.myorder{
+.myorder,
+.finbuy{
     width: 100%;
     height: 100vh;
     display: grid;
@@ -323,12 +324,14 @@ body {
     width: 300px;
 }
 
-.myorder__content {
+.myorder__content,
+.finbuy__content{
     display: flex;
     flex-direction: column;
 }
 
-.order{
+.order, 
+.finbuy__order{
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 16px;
@@ -339,28 +342,33 @@ body {
     padding: 0 24px;
 }
 
-.order p:nth-child(1){
+.order p:nth-child(1), 
+.finbuy__order p:nth-child(1){
     display: flex;
     flex-direction: column;
 }
 
 
-.order p span:nth-child(1){
+.order p span:nth-child(1),
+.finbuy__order p span:nth-child(1){
     font-size: var(--md);
     font-weight: bold;
 }
 
-.order p:nth-child(2){
+.order p:nth-child(2),
+.finbuy__order p:nth-child(2){
     text-align: end;
     font-weight: bold;
 }
 
-.order p span:nth-child(2){
+.order p span:nth-child(2),
+.finbuy__order p span:nth-child(2){
     font-size: var(--sm);
     color: var(--background-paint);
 }
 
-.myorder__shopcart{
+.myorder__shopcart,
+.finbuy__shopcart{
     display: grid;
     grid-template-columns: auto 1fr auto auto;
     gap: 16px;
@@ -368,22 +376,26 @@ body {
     align-items: center;
 }
 
-.myorder__shopcart figure{
+.myorder__shopcart figure,
+.finbuy__shopcart figure{
     margin: 0;
 }
 
-.myorder__shopcart figure img{
+.myorder__shopcart figure img,
+.finbuy__shopcart figure img{
     width: 70px;
     height: 70px;
     border-radius: 20px;
     object-fit: cover;
 }
 
-.myorder__shopcart p:nth-child(2){
+.myorder__shopcart p:nth-child(2),
+.finbuy__shopcart p:nth-child(2){
     color: var(--background-paint);
 }
 
-.myorder__shopcart p:nth-child(3){
+.myorder__shopcart p:nth-child(3),
+.finbuy__shopcart p:nth-child(3){
     font: var(--md);
     font-weight: bold;
 }
@@ -577,6 +589,8 @@ nav{
     margin-top: 0;
     margin-bottom: 36px;
 }
+
+
 
 @media (max-width: 640px) {
     .form{
